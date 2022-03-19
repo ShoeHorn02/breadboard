@@ -26,33 +26,33 @@ def check_list(component_type):
     if component_type == 'resistor':
         check_list = [
                         ["description", False, 'any'],
-                        ["tolerance", True, 'int'],
-                        ["stability", True, 'int'],
-                        ["reliability", True, 'int'],
-                        ["voltage_coefficient", True, 'int'],
-                        ["noise", True, 'int'],
-                        ["temperature_rating", True, 'int'],
-                        ["thermal_resistance", True, 'int'],
-                        ["temperature_coefficient_of_resistance", True, 'int'],
+                        ["tolerance", True, 'float'],
+                        ["stability", True, 'float'],
+                        ["reliability", True, 'float'],
+                        ["voltage_coefficient", True, 'float'],
+                        ["noise", True, 'float'],
+                        ["temperature_rating", True, 'float'],
+                        ["thermal_resistance", True, 'float'],
+                        ["temperature_coefficient_of_resistance", True, 'float'],
                     ]
-        return check_list					
+        return check_list
     elif component_type == 'capacitor':
         check_list = [
                         ["description", False, 'any'],
-                        ["nominal_capacitance", True, 'int'],
-                        ["working_voltage", True, 'int'],
-                        ["tolerance", True, 'int'],
-                        ["working_temperature", True, 'int'],
-                        ["temperature_coefficient", True, 'int'],
+                        ["nominal_capacitance", True, 'float'],
+                        ["working_voltage", True, 'float'],
+                        ["tolerance", True, 'float'],
+                        ["working_temperature", True, 'float'],
+                        ["temperature_coefficient", True, 'float'],
                     ]
         return check_list
     elif component_type == 'transistor':
         check_list = [
                         ["description", False, 'any'],
-                        ["current_gain", True, 'int'],
-                        ["collector_emitter_voltage", True, 'int'],
-                        ["emitter_base_voltage", True, 'int'],
-                        ["collector_current", True, 'int'],
+                        ["current_gain", True, 'float'],
+                        ["collector_emitter_voltage", True, 'float'],
+                        ["emitter_base_voltage", True, 'float'],
+                        ["collector_current", True, 'float'],
                     ]
         return check_list
 

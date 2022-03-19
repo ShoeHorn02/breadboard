@@ -45,6 +45,38 @@ http://localhost:3000/
 ##to install an npm package
 docker-compose exec frontend npm install --save react-json-view
 
+## Sample JsonResponse
+
+{
+    "type": "resistor",
+    "description": "abc",
+    "tolerance" : 5,
+    "stability": 6,
+    "reliability": 5,
+    "voltage_coefficient": 8,
+    "noise": 10,
+    "temperature_rating" : 9,
+    "thermal_resistance": 7,
+    "temperature_coefficient_of_resistance": 9
+}
+
+{
+    "type": "capacitor",
+    "nominal_capacitance": 0.02,
+    "working_voltage": 200.0,
+    "tolerance": 0.05,
+    "working_temperature": 0.0,
+    "temperature_coefficient": 0.8
+}
+
+{
+    "type": "transistor",
+    "current_gain": 0.02,
+    "collector_emitter_voltage": 200.0,
+    "emitter_base_voltage": 0.05,
+    "collector_current": 0.0
+} 
+
 
 ## Screen Shots of Results (UI)
 
