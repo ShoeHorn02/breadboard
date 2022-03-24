@@ -45,6 +45,10 @@ http://localhost:3000/
 ##to install an npm package
 docker-compose exec frontend npm install --save react-json-view
 
+## unit test can be run
+
+docker compose exec backend python manage.py test main_api
+
 ## Sample JsonResponse
 
 {
@@ -75,7 +79,7 @@ docker-compose exec frontend npm install --save react-json-view
     "collector_emitter_voltage": 200.0,
     "emitter_base_voltage": 0.05,
     "collector_current": 0.0
-} 
+}
 
 
 ## Screen Shots of Results (UI)
